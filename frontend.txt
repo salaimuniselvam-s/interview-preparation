@@ -1,0 +1,34 @@
+What is the difference between null and undefined in JavaScript?
+
+null is a value that represents the intentional absence of any object value.
+undefined is a value that is automatically assigned to variables that have been declared but not assigned a value.
+
+
+What is event delegation in JavaScript?
+
+Event delegation is a technique where you attach a single event listener to a parent element instead of attaching multiple event listeners to individual child elements.
+Events that occur on the child elements bubble up to the parent element and can be handled by the single event listener.
+This approach is useful for dynamically created elements or when you have a large number of elements to attach event listeners to.
+
+
+What is the difference between a deep copy and a shallow copy in JavaScript?
+
+A shallow copy creates a new object or array that references the original object's properties or elements.
+A deep copy creates a new object or array and recursively copies all properties or elements, creating new references for nested objects or arrays.
+
+
+What is the box model in CSS?
+
+The box model is a way to represent elements in CSS as rectangular boxes.
+It consists of the content area, padding, border, and margin.
+The content area is where the actual content of the element is displayed.
+Padding is the space between the content and the border.
+Border is a line that surrounds the padding and content.
+Margin is the space outside the border.
+What are some ways to optimize website performance?
+
+Minify and compress CSS, JavaScript, and HTML files.
+Optimize images by compressing them or using responsive images.
+Use browser caching to reduce server load and improve loading times for repeat visits.
+Reduce the number of HTTP requests by combining and minifying files.
+Enable GZIP compression on the server to reduce file sizes.

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="float.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="left">1</div>
+      <div class="left">2</div>
+      <div class="right">3</div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+        sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
+        iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+        aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+        congue.
+      </p>
+    </section>
+
+    <div>
+      <h2>Without clear</h2>
+      <div class="div1">div1</div>
+      <div class="div2">
+        div2 - Notice that the div2 element is after div1, in the HTML code.
+        However, since div1 is floated to the left, this happens: the text in
+        div2 is floated around div1, and div2 surrounds the whole thing.
+      </div>
+      <br />
+
+      <h2>Using clear</h2>
+      <div class="div3">div3</div>
+      <div class="div4">
+        div4 - Using clear moves div4 down below the floated div3. The value
+        "left" clears elements floated to the left. You can also clear "right"
+        and "both".
+      </div>
+    </div>
+  </body>
+</html>

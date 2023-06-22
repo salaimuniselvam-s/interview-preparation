@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Example</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        text-align: left;
+      }
+
+      caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      thead {
+        background-color: #ddd;
+      }
+
+      tfoot {
+        background-color: #f5f5f5;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Employee Details - Table Example
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Department</th>
+          <th colspan="2">Contact Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">John Doe</td>
+          <td>Manager</td>
+          <td>Marketing</td>
+          <td>Email:</td>
+          <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td>123-456-7890</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>Developer</td>
+          <td>IT</td>
+          <td colspan="2">No Contact Information</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Total Employees: 2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

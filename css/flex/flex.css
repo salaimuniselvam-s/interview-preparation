@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  align-content: center;
+  width: 100%;
+  background-color: yellow;
+  border: 1px solid black;
+  position: relative;
+}
+.flex-items {
+  width: 200px;
+  min-height: 100px;
+  background-color: brown;
+  border: 2px solid black;
+}
+
+.flex-item-2 {
+  flex: 1 0 0;
+  align-self: flex-start;
+}
+
+.axis {
+  position: absolute;
+}
+/* For the main axis (horizontal axis) */
+.axis.main-axis {
+  top: 50%;
+  height: 6px;
+  background-color: red;
+  left: 0;
+  right: 0;
+}
+/* For the cross axis (vertical axis) */
+.axis.cross-axis {
+  left: 50%;
+  width: 6px;
+  top: 0;
+  background-color: blue;
+  bottom: 0;
+}
+
+.axis.main-axis::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+
+.axis.main-axis::after {
+  bottom: -8px;
+  right: 0;
+  border-bottom: 6px solid red;
+  border-right: 6px solid red;
+  transform: rotate(-45deg);
+}
+
+.axis.cross-axis::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 6px solid blue;
+  border-right: 6px solid blue;
+  transform: rotate(45deg);
+  /* transform: rotate(235deg); */
+}

@@ -1,0 +1,26 @@
+BEM (Block, Element, Modifier) is a popular naming convention and methodology for writing CSS classes. It provides a structured approach to naming and organizing CSS classes, making styles more modular, reusable, and maintainable. Here's an overview of how BEM works:
+
+Block:
+
+A block represents a standalone, reusable component or module.
+It is a high-level parent element that encapsulates related elements and provides a distinct functional or visual purpose.
+Block names are written in lowercase and separated by hyphens.
+Example: .button, .header, .card
+
+Element:
+
+An element represents a part or component within a block.
+It is semantically tied to the block and does not make sense outside of it.
+Element names are written as the block name, followed by two underscores (__), and then the element name in lowercase and separated by hyphens.
+Example: .button__text, .header__logo, .card__title
+
+Modifier:
+
+A modifier represents a variation or state of a block or element.
+It allows you to modify the appearance, behavior, or state of a block or element without duplicating styles.
+Modifier names are written as the block or element name, followed by two hyphens (--), and then the modifier name in lowercase and separated by hyphens.
+Example: .button--primary, .card__title--large, .header--fixed
+
+By following the BEM naming convention, you can create clear, self-explanatory class names that communicate the relationships and dependencies between different parts of your CSS code. This approach promotes modularity, reusability, and easier maintenance of CSS stylesheets, especially in large-scale projects or team collaborations.
+
+Note that while BEM is a popular methodology, there are other naming conventions and methodologies available, and the choice depends on your project's requirements and team preferences.
