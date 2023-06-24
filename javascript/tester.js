@@ -1,4 +1,5 @@
-let s = "s";
-let s1 = new String("sdf");
-
-console.log(typeof s, s1 + "sdf");
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+randomInteger(1, 100); // returns a random integer from 1 to 100
+randomInteger(1, 1000); 
