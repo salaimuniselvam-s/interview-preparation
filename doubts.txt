@@ -1,3 +1,5 @@
 What is the difference between proto and prototype
 What are the bitwise operators available in javascript
 weakset vs set
+What are React Mixins?
+What are render props?

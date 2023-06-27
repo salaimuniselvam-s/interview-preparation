@@ -1,9 +1,35 @@
-import "./App.css";
+/* eslint-disable react/prop-types */
+import { memo, useState, useMemo } from "react";
 
-function App() {
-  const data = { name: "John", age: 42 };
+const MyMemoizedComponent = memo(function MyMemoizedComponent({ message }) {
+  console.log("MyMemoizedComponent", message);
+  return <div>{message.details}</div>;
+});
 
-  return <pre>{JSON.stringify(data, null, 2)}</pre>;
-}
+const RenderingLogic = ({ render }) => {
+  return <div>{render("5")}</div>;
+};
 
-export default App;
+const RenderProps = () => {
+  const [memo, setMemo] = useState({ details: "I am a memoized component" });
+
+  const memoizedMessage = useMemo(() => memo, [memo]);
+
+  return (
+    <div>
+      RenderProps -{" "}
+      <RenderingLogic
+        render={(data) => {
+          return <h1> I am being rendered by render props {data}</h1>;
+        }}
+      />
+      <button onClick={() => setMemo({ details: "I am a memoized component" })}>
+        Memo
+      </button>
+      Pure Component
+      <MyMemoizedComponent message={memoizedMessage} />
+    </div>
+  );
+};
+
+export default RenderProps;
