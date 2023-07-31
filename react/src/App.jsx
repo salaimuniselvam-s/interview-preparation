@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { memo, useState, useMemo } from "react";
+import Svs from "./Hoc";
 
 const MyMemoizedComponent = memo(function MyMemoizedComponent({ message }) {
   console.log("MyMemoizedComponent", message);
@@ -17,7 +19,8 @@ const RenderProps = () => {
 
   return (
     <div>
-      RenderProps -{" "}
+      <Svs sms="sdfk" />
+      {/* RenderProps -{" "}
       <RenderingLogic
         render={(data) => {
           return <h1> I am being rendered by render props {data}</h1>;
@@ -27,7 +30,7 @@ const RenderProps = () => {
         Memo
       </button>
       Pure Component
-      <MyMemoizedComponent message={memoizedMessage} />
+      <MyMemoizedComponent message={memoizedMessage} /> */}
     </div>
   );
 };

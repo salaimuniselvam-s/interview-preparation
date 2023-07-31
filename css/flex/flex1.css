@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.flex-input {
+  flex: 1 0;
+}
+
+.flex-button {
+  flex: 1 0;
+}

@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+body {
+  background-color: $bg;
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    @include theme($theme: red);
+  }
+}

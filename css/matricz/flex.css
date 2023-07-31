@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.flex {
+  display: flex;
+  padding: 16px;
+}
+.sms {
+  flex: 1 0 auto;
+  border: 1px solid green;
+}
+.s2 {
+  border: 1px solid red;
+  flex-grow: 20;
+}
+.tags {
+  flex-grow: 2;
+  display: flex;
+  gap: 12px;
+}
+
+.flex-items {
+  cursor: pointer;
+  flex: 1 0 auto;
+}
+.burger,
+.burger-tags {
+  display: none;
+}
+.burger-tags {
+  display: none;
+}
+
+.home {
+  flex-grow: 3;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 14px;
+  }
+  .tags {
+    display: none;
+  }
+  .burger {
+    display: block;
+    position: relative;
+  }
+  .burger.active .burger-tags {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    background-color: antiquewhite;
+    right: 0;
+    top: 16px;
+  }
+
+  .burger-tags.active div {
+    padding: 6px;
+  }
+}

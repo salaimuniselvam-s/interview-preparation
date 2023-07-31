@@ -27,7 +27,7 @@ body {
 }
 
 .flex-item-2 {
-  flex: 1 0 0;
+  flex-grow: 1;
   align-self: flex-start;
 }
 

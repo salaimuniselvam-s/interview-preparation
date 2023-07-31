@@ -1,0 +1,6 @@
+$bg: rgb(28, 7, 110);
+
+@mixin theme($theme: #01f) {
+  font-size: 12px;
+  background-color: $theme;
+}

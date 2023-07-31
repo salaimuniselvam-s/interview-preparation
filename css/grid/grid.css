@@ -12,10 +12,10 @@
 /* Layout */
 
 .grid-container {
-  padding: 60px;
+  /* padding: 60px; */
   display: grid;
   /* grid-template-rows: 50px 100px 120px 50px; */
-  grid-auto-rows: minmax(120px, auto);
+  grid-auto-rows: minmax(40px, auto);
   grid-template-columns: 1fr 6fr;
   /* grid-template-areas:
     "header header"
