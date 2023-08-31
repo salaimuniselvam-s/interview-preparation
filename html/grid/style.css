@@ -19,3 +19,16 @@
 .item2 {
   flex-grow: 2;
 }
+
+/* grid */
+.grid-container {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: calc(100vh - 48px);
+  margin: 24px;
+}
+
+.grid-items {
+  border: 1px solid green;
+}
